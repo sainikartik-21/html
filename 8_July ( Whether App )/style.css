@@ -1,0 +1,197 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    width: 95%;
+    height: 60vh;
+    background-color: #202020;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+.hero{
+    width: 50%;
+    height: 100%;
+    /* background-color: #2a2929; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.7; */
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;  /* shorthand for top, right, bottom, left: 0 */
+  background: radial-gradient(circle at bottom left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 80%);
+  pointer-events: none; /* ensure it doesn't block clicks */
+}
+
+.hero h1{
+    color: white;
+    z-index: 100;
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero h1 em{
+    font-style: normal;
+    color: rgb(40, 249, 242);
+}
+
+.hero p{
+    color: white;
+    z-index: 100;
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.check{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.city_search{
+    width: 90%;
+    height: 5rem;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.search{
+    width: 50%;
+    height: 80%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px;
+    padding: 0 20px;
+    color: rgb(117, 117, 117);
+    background-color: rgb(39, 41, 42);
+}
+
+.search input::placeholder {
+    border: none;
+    color: rgb(117, 117, 117);
+}
+
+.sign {
+    position: relative;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    fill: rgb(117, 117, 117);
+    margin-right: 10px;
+}
+
+#details{
+    width: 90%;
+    height: 28rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    display: flex;
+    align-items: center;
+    background-color: #2a2929;
+    padding: 20px;
+}
+
+.city_not{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 204%;
+    height: 28rem;
+    border-radius: 20px;
+}
+
+.city{
+    border-radius: 20px;
+}
+
+.temp {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    border-radius: 20px;
+}
+
+.img {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border-radius: 20px;
+    background-color: #2a2929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    width: 45%;
+    height: 80%;
+}
+
+.whe {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+    border-radius: 20px;
+}
+
+.Hum {
+    grid-row-start: 4;
+    border-radius: 20px;
+}
+
+.wind {
+    grid-row-start: 4;
+    border-radius: 20px;
+    background-color: brown;
+}
+
+.click{
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+

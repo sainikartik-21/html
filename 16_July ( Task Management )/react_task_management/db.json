@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "title": "Prepare Presentation",
+      "description": "Create slides for the upcoming project meeting.",
+      "priority": "High",
+      "status": "In Progress",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Update Portfolio Website",
+      "description": "Add recent projects and optimize for SEO.",
+      "priority": "Medium",
+      "status": "Pending"
+    },
+    {
+      "id": "3",
+      "title": "Read Industry Articles",
+      "description": "Stay updated with the latest trends in tech.",
+      "priority": "Low",
+      "status": "Completed"
+    }
+  ]
+}
